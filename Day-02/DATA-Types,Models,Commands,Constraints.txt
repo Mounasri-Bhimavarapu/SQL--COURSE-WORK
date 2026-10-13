@@ -1,0 +1,102 @@
+--Data : Data is a collection of raw facts and values that can be processed to produce meaningful information.
+
+--Record : A record is a complete set of related data about one particular person, object, or transaction. In a database table, a record is usually represented by a row.
+
+--Table : group of rows and columns.A table is a collection of related data organized into rows and columns. Rows represent records, while columns represent individual fields or attributes.
+
+--Database: A database is an organized collection of related data that can be stored, managed, retrieved, and updated efficiently. A relational database generally contains multiple related tables. 
+
+
+DATA MODELS
+
+1. Hierarchical Data Model: The Hierarchical Data Model organizes data in a tree-like structure using parent-child relationships. Each child normally has only one parent.
+
+2. Network Data Model : The Network Data Model organizes data as a network or graph of records connected through links or pointers. Unlike the hierarchical model, a record can have multiple parent records, making it suitable for many-to-many relationships.
+
+
+3. Relational Data Model: The Relational Data Model organizes data into tables consisting of rows and columns. Relationships between tables are commonly established using keys, such as primary keys and foreign keys.
+
+
+4. Object-Oriented Data Model: The Object-Oriented Data Model stores data in the form of objects, similar to the way objects are represented in object-oriented programming. An object can contain both data and methods/behavior.
+
+SQL
+
+SQL (Structured Query Language) is a language used to communicate with and manage data in relational databases.
+--> It is used to create, read, update, and delete data.
+--> Common commands include SELECT, INSERT, UPDATE, DELETE, CREATE, and DROP.
+--> SQL is used with database systems such as MySQL, Oracle, PostgreSQL, and SQL Server.
+
+MySQL
+
+MySQL is an open-source relational database management system (RDBMS) that uses SQL to store and manage data.
+--> MySQL stores data in tables consisting of rows and columns.
+--> It uses SQL commands to manage the stored data.
+
+TYPES OF SUB-QURIES
+
+1. DDL – Data Definition Language
+
+CREATE – creates a table/database
+ALTER – changes table structure
+DROP – deletes a table/database
+TRUNCATE – removes all records from a table
+
+2. DQL – Data Query Language
+SELECT
+
+3. DML – Data Manipulation Language
+
+INSERT – adds new records
+UPDATE – modifies existing records
+DELETE – removes records
+
+4. DCL – Data Control Language
+GRANT – gives permissions
+REVOKE – removes permissions
+
+5. TCL – Transaction Control Language
+
+COMMIT – permanently saves changes
+ROLLBACK – cancels changes
+SAVEPOINT – creates a point to which you can roll back
+
+DATA TYPES
+
+Numeric Data Types :
+
+INT – Stores whole numbers.
+SMALLINT – Stores small-range whole numbers.
+BIGINT – Stores very large whole numbers.
+DECIMAL – Stores exact decimal numbers.
+FLOAT – Stores approximate decimal numbers.
+
+Character/String Data Types : 
+
+CHAR – Stores fixed-length text.
+VARCHAR – Stores variable-length text.
+TEXT – Stores large amounts of text.
+ENUM – Stores one value from a predefined list of allowed values.
+
+Date and Time Data Types : 
+
+DATE – Stores date values.
+TIME – Stores time values.
+DATETIME – Stores both date and time.
+TIMESTAMP – Stores date and time information, often for tracking changes.
+
+
+SQL CONSTRAINTS
+
+NOT NULL – Ensures a column cannot contain NULL values.
+UNIQUE – Ensures all values in a column are unique.
+CHECK – Ensures values satisfy a specified condition.
+DEFAULT – Provides a default value when no value is specified.
+PRIMARY KEY – Uniquely identifies each record in a table and cannot contain NULL values.
+FOREIGN KEY – Links a column to a primary or unique key in another table.
+
+
+
+
+
+
+
