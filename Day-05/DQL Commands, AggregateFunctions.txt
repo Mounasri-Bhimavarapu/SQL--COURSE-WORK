@@ -1,0 +1,61 @@
+## DQL Clauses and Operators
+
+1. WHERE: Filters records based on a specified condition. 
+Syntax: `SELECT * FROM table_name WHERE condition;`
+
+2. ALIAS (AS): Gives a temporary name to a column or table.
+ Syntax: `SELECT column_name AS alias_name FROM table_name;`
+
+3. LIKE: Searches for a specific pattern in a column. 
+Syntax: `SELECT * FROM table_name WHERE column_name LIKE 'pattern';`
+
+4. BETWEEN: Selects values within a specified range. 
+Syntax: `SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;`
+
+5. AND: Selects records when all specified conditions are true. 
+Syntax: `SELECT * FROM table_name WHERE condition1 AND condition2;`
+
+6. IN: Selects records matching any value in a specified list. 
+Syntax: `SELECT * FROM table_name WHERE column_name IN (value1, value2);`
+
+7. NOT IN: Selects records that do not match any value in a specified list.
+ Syntax: `SELECT * FROM table_name WHERE column_name NOT IN (value1, value2);`
+
+8. ASC (Ascending): Sorts records in ascending order, such as A to Z or smallest to largest. 
+Syntax: `SELECT * FROM table_name ORDER BY column_name ASC;`
+
+9. DESC (Descending): Sorts records in descending order, such as Z to A or largest to smallest. 
+Syntax: `SELECT * FROM table_name ORDER BY column_name DESC;`
+
+10. DISTINCT: Retrieves only unique values by removing duplicates from the result.
+ Syntax: `SELECT DISTINCT column_name FROM table_name;`
+
+11. LIMIT: Restricts the number of records returned by a query.
+ Syntax: `SELECT * FROM table_name LIMIT number;`
+
+
+
+## SQL Aggregate Functions
+
+1. MIN(): Returns the smallest value in a column. 
+Syntax: `SELECT MIN(column_name) FROM table_name;`
+
+2. MAX(): Returns the largest value in a column.
+ Syntax: `SELECT MAX(column_name) FROM table_name;`
+
+3. SUM(): Returns the total of all values in a numeric column.
+ Syntax: `SELECT SUM(column_name) FROM table_name;`
+
+4. AVG(): Returns the average of values in a numeric column. 
+Syntax: `SELECT AVG(column_name) FROM table_name;
+`
+5. COUNT(): Returns the number of records or non-NULL values in a column. 
+Syntax: `SELECT COUNT(*) FROM table_name;`
+
+GROUP BY: Groups rows with the same values in specified columns and is often used with aggregate functions like SUM(), MAX(), MIN(), AVG(), and COUNT().
+Syntax: SELECT column_name, aggregate_function(column_name) FROM table_name GROUP BY column_name;
+
+
+HAVING: Filters groups based on a specified condition, usually after using GROUP BY.
+Syntax: SELECT column_name, aggregate_function(column_name) FROM table_name GROUP BY column_name HAVING condition;
+
