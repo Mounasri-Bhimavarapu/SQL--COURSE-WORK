@@ -1,6 +1,0 @@
-DML Commands
-DML (Data Manipulation Language) is used to add, modify, and remove data from tables.
-1. INSERT – Used to add new records into a table.
-2. UPDATE – Used to modify existing records in a table.
-3. DELETE – Used to remove existing records from a table.
-4. SELECT – Used to retrieve or display data from a table.
