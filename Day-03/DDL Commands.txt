@@ -1,0 +1,38 @@
+DDL Commands in SQL
+1. CREATE: Creates a new table.
+syntax:
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype
+);
+
+2. ALTER :Used to change the structure of an existing table.
+
+   a) ADD
+      ALTER TABLE table_name
+      ADD column_name datatype;
+   
+
+   b) CHANGE COLUMN
+      ALTER TABLE table_name
+      CHANGE old_column_name new_column_name datatype;
+   
+   c) MODIFY
+      ALTER TABLE table_name
+      MODIFY column_name new_datatype; 
+
+   d) RENAME TABLE
+      RENAME TABLE old_table_name
+      TO new_table_name;
+
+   
+3. DROP : Permanently deletes the table and all its data.
+     DROP TABLE table_name;
+
+4. TRUNCATE:Deletes all records from a table, but keeps the table structure.
+   TRUNCATE TABLE table_name;
+
+5. DELETE:Deletes records from a table. It can delete specific rows using a condition.
+   DELETE FROM table_name
+   WHERE condition;
