@@ -1,0 +1,28 @@
+SQL -JOINS
+
+1. INNER JOIN: Returns only matching rows from both tables.
+SELECT * FROM A INNER JOIN B ON A.id = B.id;
+
+2. LEFT JOIN: Returns all rows from the left table and matching rows from the right table.
+SELECT * FROM A LEFT JOIN B ON A.id = B.id;
+
+3. RIGHT JOIN: Returns all rows from the right table and matching rows from the left table.
+SELECT * FROM A RIGHT JOIN B ON A.id = B.id;
+
+4. FULL OUTER JOIN: Returns all matching and non-matching rows from both tables.
+SELECT * FROM A LEFT JOIN B ON A.id = B.id UNION SELECT * FROM A RIGHT JOIN B ON A.id = B.id; 
+
+5. CROSS JOIN: Returns every possible combination of rows from both tables.
+SELECT * FROM A CROSS JOIN B;
+
+6. SELF JOIN: Joins a table with itself to compare rows within the same table.
+SELECT A.name, B.name FROM Employees A JOIN Employees B ON A.manager_id = B.emp_id;
+
+7. EQUI JOIN: Joins two tables using the equality (=) operator in the join condition.
+SELECT * FROM A JOIN B ON A.id = B.id;
+
+8. NON-EQUI JOIN: Joins two tables using operators such as <, >, <=, >= or BETWEEN instead of equality.
+SELECT * FROM Employees E JOIN Salary_Grades S ON E.salary BETWEEN S.min_salary AND S.max_salary;
+
+9. NATURAL JOIN: Automatically joins two tables using columns that have the same names and compatible data types.
+SELECT * FROM A NATURAL JOIN B;
