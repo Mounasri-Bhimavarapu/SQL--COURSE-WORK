@@ -1,0 +1,54 @@
+1. Definition
+ER (Entity Relationship) Diagram: A graphical representation of a database that shows entities, attributes, and relationships.
+
+2. Main Components
+- Entity: Real-world object. Example: Student, Employee. Symbol: Rectangle.
+- Attribute: Properties of an entity. Example: Name, Age, ID. Symbol: Oval.
+- Relationship: Association between entities. Example: Student ENROLLS in Course. Symbol: Diamond.
+
+3. Types of Entities
+- Strong Entity: Has its own primary key.
+- Weak Entity: Depends on another entity for identification.
+
+4. Types of Attributes
+- Simple: Cannot be divided (Age).
+- Composite: Can be divided (Full Name).
+- Single-valued: One value (DOB).
+- Multivalued: Multiple values (Phone Numbers).
+- Derived: Calculated from another attribute (Age from DOB).
+- Key: Uniquely identifies records (Student_ID).
+
+5. Types of Relationships (Cardinality)
+- 1:1 – One-to-One: One person has one passport.
+- 1:M – One-to-Many: One department has many employees.
+- M:1 – Many-to-One: Many employees belong to one department.
+- M:N – Many-to-Many: Many students enroll in many courses.
+
+6. Important Symbols
+- Rectangle → Entity.
+- Double Rectangle → Weak Entity.
+- Oval → Attribute.
+- Underlined Oval → Key Attribute.
+- Double Oval → Multivalued Attribute.
+- Dashed Oval → Derived Attribute.
+- Diamond → Relationship.
+- Double Diamond → Identifying Relationship.
+- Double Line → Total Participation.
+- Single Line → Partial Participation.
+
+7. Primary Key & Foreign Key
+- Primary Key (PK): Uniquely identifies each record; no duplicate or NULL values.
+- Foreign Key (FK): Connects two tables by referencing a key in another table.
+
+8. Participation Constraints
+- Total Participation: Every entity must participate (Double Line).
+- Partial Participation: Participation is optional (Single Line).
+
+9. Steps to Create ER Diagram
+1. Identify entities.
+2. Identify attributes.
+3. Select primary keys.
+4. Identify relationships.
+5. Specify cardinality.
+6. Draw the diagram.
+7. Convert it into database tables.
